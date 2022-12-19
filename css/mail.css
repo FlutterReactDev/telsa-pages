@@ -1,0 +1,15 @@
+.tds-global-menu {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+@media (max-width: 720px) {
+  .tds-align--center {
+    display: none !important;
+  }
+  .tcl-page__shell {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+.footer-container {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-block-end: var(--tds-size--1x);
+}
+
+html.not-found-page,
+.not-found-page body {
+    height: 100%;
+}
+
+/* body - header - footer */
+.not-found-page [id='root'] {
+    height: calc(100% - 53px - 85px);
+}
+
+.error-container {
+    display: flex;
+    height: 100%;
+}
+
+.error-container .error-text,
+.error-container .error-image {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 57px;
+}
+
+.error-container .error-text {
+    margin-left: 8%;
+    margin-right: 4%;
+}
+
+.error-text .error-code {
+    font-size: 130px;
+    line-height: 180px;
+}
+
+.error-container .error-image {
+    align-items: center;
+}
+
+.starman {
+    background: url('../../app-assets/img/starman.svg') no-repeat center;
+    background-size: contain;
+    height: 50%;
+    width: 100%;
+}
+
+@media (max-width: 639px) {
+    /* body - header - footer */
+    .not-found-page [id='root'] {
+        height: calc(100% - 53px - 110px);
+    }
+
+    .error-container {
+        flex-direction: column;
+    }
+
+    .error-container .error-text {
+        align-items: center;
+        margin: 0;
+    }
+
+    .error-text .error-message {
+        font-size: 17px;
+    }
+
+    .error-text .error-action {
+        margin-top: 4px;
+        text-align: center;
+    }
+
+    .starman {
+        height: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .error-text .error-code {
+        font-size: 100px;
+        line-height: initial;
+    }
+}
+
+.tds-footer-meta {
+  display: flex;
+  justify-content: center;
+}
+
+.tds-footer-meta.disclaimer .tds-footer-list_item {
+    max-width: 100%;
+}
+
+@media (max-width: 639px) {
+    .tds-footer-list_item {
+        padding: 0;
+    }
+}

@@ -1,0 +1,12 @@
+.tw-chat--avaya-chat .tw-chat--avaya-chat__button{z-index:10}
+
+@media (min-width: 900px) {
+  .destop-none {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .mobile-none {
+    display: none;
+  }
+}

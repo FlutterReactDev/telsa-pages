@@ -1,0 +1,23 @@
+.container { 
+    grid-gap: 24px;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item { 
+  height: 100%;
+}
+
+.result-image-container {
+  flex-grow: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.item img {
+  display: block;
+  height: auto;
+  transition: opacity 1s ease;
+  width: 100%;
+}
